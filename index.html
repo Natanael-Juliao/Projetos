@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="./img/erp.png" alt="Logo ERP" id="logo" width="50px" height="50px">
+    </header>
+
+    <section class="container">
+        <p>Login</p>
+
+        <form>
+            <input type="text" id="username" name="username" placeholder=" Usuário">
+
+            <input type="password" id="password" name="password" placeholder=" Senha">
+            <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
+
+            <button onclick="autenticacao()" type="submit" id="botao-login"><a>Login</a></button>
+        </form action="/" id="form" method="POST">
+        <a id="recuperacao-senha" href="#">Esqueceu sua Senha?</a>
+        <p id="cadastro">Ainda não Tem Uma Conta?</p>
+        <button class="btnCriar" type="submit"><a class="btn_criar" href="./criaUser.html">Crie Sua Conta</a></button>
+
+        <!--<p id="copyright">NRJ Corp Web 1.0 © 2024</p>-->
+        <div class="producao-footer">
+            <p id="producao">Produção</p>
+            <img src="./img/sinal-wifi.png" alt="Sinal Wi-Fi" width="17px" height="17px">
+        </div>
+        <div id="resultado"></div>
+
+    </section>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-md5@0.8.3/src/md5.min.js"></script>
+</body>
+
+</html>
