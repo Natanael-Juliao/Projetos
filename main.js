@@ -79,33 +79,34 @@ function autenticacao() {
     });
 
     if (auth) {
-        return alert("Bem-vindo " + username);
+        alert("Bem-vindo " + username);
+        return acesso();
     }
     return alert("Usuário ou senha invalido");
 }
 
 const button = document.querySelector('#botao-login');
 
-const addLoading = () => {
-    button.innerHTML = '<img src="./img/loading.png" class="loading">';
-}
+// const addLoading = () => {
+//     button.innerHTML = '<img src="./img/loading.png" class="loading">';
+// }
 
-const removeLoading = () => {
-    button.innerHTML = 'Login';
-}
+// const removeLoading = () => {
+//     button.innerHTML = 'Login';
+// }
 
 // function limpaform() {
 //     document.getElementById('username').value = "";
 //     document.getElementById('password').value = "";
 // }
 
-// function acesso() {
-//     window.location.href = './system.html';
-// }
+function acesso() {
+    window.location.href = './system.html';
+}
 
 const handleSubmit = (event) => {
     event.preventDefault();
-    acesso();
+    // acesso();
 }
 
 

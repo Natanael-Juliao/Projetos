@@ -31,7 +31,7 @@ body {
 #logo {
     max-width: 200px;
     box-sizing: content-box;
-    margin: 60px 50% 0px 49%;
+    margin: 60px 52.5% 0px 47.5%;
 }
 
 p {
@@ -169,6 +169,16 @@ img {
     background: rgb(255, 150, 150);
 }
 
+.container-fgpw {
+    max-width: 300px;
+    box-sizing: content-box;
+    height: 160px;
+    margin: 60px auto;
+    padding: 20px;
+    background: var(--form);
+    border: var(--outline) 1px solid;
+    border-radius: 9px;
+}
 
 
 @keyframes spin {
