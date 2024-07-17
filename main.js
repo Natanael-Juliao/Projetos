@@ -40,9 +40,10 @@ function cadastrar() {
 
     let username = document.getElementById('username').value;
     let password = document.getElementById('password').value;
+    let email = document.getElementById('email').value;
 
-    if (username && password == "" || (username || password) == "") {
-        alert('Digite um usuario e uma senha!');
+    if ((username || password || email) == "") {
+        alert('Digite um usuario, senha e e-mail válidos!');
     } else {
         let users = [];
 
@@ -52,9 +53,10 @@ function cadastrar() {
 
         users.push({
             username: username,
-            password: md5(password)
+            password: md5(password),
+            email: email
         });
-        console.log(users);
+        // console.log(users);
         localStorage.users = JSON.stringify(users);
 
         alert('Usuario cadastrado com sucesso!');
@@ -82,7 +84,7 @@ function autenticacao() {
         alert("Bem-vindo " + username);
         return acesso();
     }
-    return alert("Usuário ou senha invalido");
+    return alert("Usuário ou senha inválidos");
 }
 
 const button = document.querySelector('#botao-login');

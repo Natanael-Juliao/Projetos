@@ -7,28 +7,37 @@
     <title>Login</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <img src="./img/erp.png" alt="Logo ERP" id="logo" width="65px" height="65px">
+        <img src="./img/erp.png" alt="Logo ERP" id="logo" width="90px" height="90px">
+        <h2 class="compy_name">APN</h2>
     </header>
 
     <section class="container">
-        <p>Login</p>
+        <p>LOGIN</p>
 
         <form>
-            <input type="text" id="username" name="username" placeholder=" Usuário">
+            <div class="user-name">
+                <img src="./img/icons8-user-30.png" alt="Imagem Usuário" width="28px" height="28px" class="img-user">
+                <input type="text" id="username" name="username" placeholder=" Usuário">
+            </div>
 
-            <input type="password" id="password" name="password" placeholder=" Senha">
-            <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
-
-            <button onclick="autenticacao()" type="submit" id="botao-login"><a>Login</a></button>
+            <div class="user-name">
+                <img src="./img/icons8-password-30.png" alt="Imagem Cadeado" width="28px" height="28px" class="img-password">
+                <input type="password" id="password" name="password" placeholder=" Senha">
+                <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
+            </div>
+                <button onclick="autenticacao()" type="submit" id="botao-login"><a>Login</a></button>
         </form action="/" id="form" method="POST">
-        <a id="recuperacao-senha" href="forgotPassword.html">Esqueceu sua Senha?</a>
-        <p id="cadastro">Ainda não Tem Uma Conta?</p>
-        <button class="btnCriar" type="submit"><a class="btn_criar" href="./criaUser.html">Crie Sua Conta</a></button>
+        <h4>Esqueceu sua Senha? Clique<a id="recuperacao-senha" href="forgotPassword.html">aqui.</a></h4>
+        <p id="cadastro">Não possui cadastro?</p>
+        <button class="btnCriar" type="submit"><a class="btn_criar" href="./criaUser.html">CADASTRE-SE</a></button>
 
         <!--<p id="copyright">NRJ Corp Web 1.0 © 2024</p>-->
         <div class="producao-footer">
