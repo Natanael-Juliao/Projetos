@@ -97,10 +97,13 @@ const button = document.querySelector('#botao-login');
 //     button.innerHTML = 'Login';
 // }
 
-// function limpaform() {
-//     document.getElementById('username').value = "";
-//     document.getElementById('password').value = "";
-// }
+
+function limpaform() {
+    document.getElementById('username').value = "";
+    document.getElementById('password').value = "";
+}
+
+
 
 function acesso() {
     window.location.href = './system.html';
@@ -108,7 +111,7 @@ function acesso() {
 
 const handleSubmit = (event) => {
     event.preventDefault();
-    // acesso();
+    limpaform();
 }
 
 
@@ -127,3 +130,57 @@ function mostrarSenha() {
         btnShowPass.classList.replace('bi-eye-slash-fill', 'bi-eye-fill');
     }
 }
+
+function salvarCadastro() {
+
+    let itemCode = document.getElementById('ipt-code').value;
+    let itemDescription = document.getElementById('ipt-description').value;
+    let itemCost = document.getElementById('ipt-cost').value;
+    let itemMkp = document.getElementById('ipt-mkp').value;
+
+    let products = [];
+
+    if (localStorage.products) {
+        products = JSON.parse(localStorage.getItem('prodcuts'));
+    }
+
+    products.push({
+        code: itemCode,
+        description: itemDescription,
+        cost: itemCost,
+        MarkUp: itemMkp
+    });
+    // console.log(users);
+    localStorage.products = JSON.stringify(products);
+
+    alert('Produto cadastrado com sucesso!');
+
+    document.getElementById('ipt-code').value = "";
+    document.getElementById('ipt-description').value = "";
+    document.getElementById('ipt-cost').value = "";
+    document.getElementById('ipt-mkp').value = "";
+
+    const a = document.querySelector('#btn-salvar');
+    a.href = "./cadastrodeprodutos.html";
+}
+
+
+function showEst(){
+    const result = document.getElementById('show-code');
+    result.innerHTML = '';
+    if(localStorage.products){
+        products = JSON.parse(localStorage.getItem('products'));
+    }
+
+    for(var i in products){
+        let p = document.createElement('p');
+        p.innerHTML = products[i];
+        result.append(p)
+    }
+}
+
+
+
+
+
+

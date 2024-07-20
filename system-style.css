@@ -4,8 +4,6 @@
     --azul-primary: #5893CA;
     --fundo: #EAEAEA;
     --traco: #B1B1B1;
-
-
 }
 
 body {
@@ -49,6 +47,7 @@ body {
     margin-left: -8px;
     width: 101%;
     display: flex;
+    height: 20px;
  }
 
  #p-apn {
@@ -65,7 +64,7 @@ body {
 
  .teste {
     display: inline;
-    margin: 2px 0 0 76.7vw;  
+    margin: 2px 0 0 75.5vw;  
     line-height: 14px; 
  }
 
@@ -185,4 +184,186 @@ body {
     margin-bottom: 0;
     cursor: pointer;
  }
+.container-menu {
+    margin: 0 0 0 -8px;
+    background: #FFFFFF;
+    height: 120px;
+    width: 101%;
+}
 
+h2 {
+    margin: 0 0 0 50px;
+    padding-top: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.menu-btn {
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 14px;
+}
+
+.a_btn-cadastro {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.btn-cadastro, .btn-consultaEst {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 35px;
+    border: 1px solid var(--azul-primary);
+    padding: 10px;
+    border-radius: 6px;
+    background: var(--azul-primary);
+    text-transform: uppercase;
+}
+
+.ipt-pesquisar {
+    height: 32px;
+    border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: 1px solid black;
+    margin: 0 0 0 -12px;
+    width: 250px;
+}
+
+.preencher, .preencher-consulta {
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-left: 775px;
+    width: 20px; 
+    padding: 15px;
+    font-size: 6px;
+    padding-bottom: 11px;
+    background: var(--fundo);
+    color: var(--fundo);
+}
+
+.preencher-consulta {
+    margin-left: 1050px;
+}
+
+.a_p-menu-first {
+    text-decoration: none;
+    color: var(--azul-primary);
+}
+
+.container-complementar {
+    margin-left: -8px;
+    width: 101%;
+    height: 520px;
+    background: #FFFFFF;
+}
+
+.container-incluir-prod {
+    margin: 0 0 0 -8px;
+    width: 101%;
+    border: 1px solid #FFFFFF;
+    height: 520px;
+    background: #FFFFFF;
+}
+
+.inserindo-prod {
+    border: 3px solid rgb(209, 209, 209);
+    margin: 46px;
+    width: 93%;
+    height: 420px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.description {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 80px;
+}
+
+.item-description {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 95px;
+}
+
+.item-cost {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 90px;
+}
+
+.item-mkp {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 96px;
+}
+
+#ipt-code {
+    margin-top: 65px;
+    margin-left: 10px;
+    width: 250px;
+    line-height: 1.4em;
+}
+
+#ipt-description {
+    margin-top: 65px;
+    margin-left: 10px;
+    width: 250px;
+    line-height: 1.4em;
+}
+
+#ipt-cost {
+    margin-top: 65px;
+    margin-left: 10px;
+    width: 250px;
+    line-height: 1.4em;
+}
+
+#ipt-mkp {
+    margin-top: 65px;
+    margin-left: 10px;
+    width: 250px;
+    line-height: 1.4em;
+}
+
+#btn-salvar {
+    padding: 8px;
+    width: 100px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background: var(--azul-primary);
+    border: none;
+    border-radius: 4px;
+    margin: 15px 0 0 1250px;
+    cursor: pointer;
+}
+
+.space {
+    padding: 20px;
+}
+
+.consultaEst {
+    border: 1px solid black;
+    height: 480px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.consultaEst-cabecalho {
+    border-bottom: 1px solid black;
+    height: 1.5em;
+    width: 100%;
+}
+
+.consultaEst-p {
+    font-size: 14px;
+    margin: 0 35px 0 50px;
+}
+
+#show-code {
+    font-size: 15px;
+    margin-left: 65px;
+}

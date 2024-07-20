@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APN ERP</title>
+    <link rel="stylesheet" href="./system-style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <section class="first-line">
+        <img src="./img/icons8-dynamics-365-48.png" class="icn-logo" alt="Ícone ERP" width="16px" height="16px">
+        <p class="first-paragrapher">APN ERP Produção</p>
+        <img src="./img/sinal-wifi.png" class="icn-wifi" alt="Sinal de Wi-Fi" width="16px" height="16px">
+    </section>
+
+    <section class="second-line">
+        <a href="./system.html">
+            <img src="./img/icons8-final-state-50.png" class="icn-circulo" alt="Círculo" width="25px" height="25px">
+        </a>
+    </section>
+
+    <section class="third-line">
+        <p id="p-apn">APN</p>
+        <div class="teste">
+            <p class="p-first">APN ERP Produção</p>
+            <img src="./img/sinal-wifi.png" class="icn-wifi-third" alt="Sinal de Wi-Fi" width="10px" height="10px">
+            <p class="p-second">natanael.juliao</p>
+            <p class="p-third">16/07/2024</p>
+            <p class="p-fourth">NRJ Empreendimentos</p>
+        </div>
+    </section>
+
+    <section class="container-menu">
+        <h2>Consulta de Estoque:</h2>
+        <div class="menu-btn">
+            <button class="btn-consultaEst" onclick="showEst()">Mostrar</button>
+            <p class="preencher-consulta">T</p>
+            <input type="text" placeholder="Pesquisar" class="ipt-pesquisar">
+        </div>
+
+    </section>
+    <section class="container-complementar">
+        <div class="space">
+            <div class="consultaEst">
+                <div class="consultaEst-cabecalho">
+                    <p class="consultaEst-p">| Código do Produto |</p>
+                    <p class="consultaEst-p">| Descrição do Produto |</p>
+                    <p class="consultaEst-p">| Quantidade em Estoque |</p>
+                    <p class="consultaEst-p">| Custo do Produto</p>
+                    <p class="consultaEst-p">| Preço de Venda |</p>
+                    <p class="consultaEst-p">| Lucro Bruto |</p>
+                </div>
+                <table>
+                    <p id="show-code"></p>
+                </table>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-md5@0.8.3/src/md5.min.js"></script>
